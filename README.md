@@ -10,7 +10,7 @@
 ## 핸즈온 주제
 오늘의 핸즈온은 크게 [section01. '파워오토메이트'를 통해 QR생성 후, 이메일로 자동 배포하기](https://github.com/g1nya2/Power_Platform_Attendance/tree/main/Start-here/section01) 와 [section02. '파워앱스'로 QR체크인 앱 만들기](https://github.com/g1nya2/Power_Platform_Attendance/tree/main/Start-here/section02) 두가지 내용으로 구성되어있습니다. 이를 통해 더이상 수기로 참석자 명단 작성하지말고, 참석자 명단을 자동으로 받는 방법을 배워보세요.
 
-여기서부터 시작하세요 :[Start-here](https://github.com/g1nya2/Power_Platform_Attendance/tree/main/Start-here)
+여기서부터 시작하세요 : [Start-here](https://github.com/g1nya2/Power_Platform_Attendance/tree/main/Start-here)
 
 ## 준비물 및 참고할 사이트
 ### 1. 엑셀 파일 , SharePoint List
