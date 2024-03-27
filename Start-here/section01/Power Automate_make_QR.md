@@ -3,21 +3,21 @@
 먼저, [Microsoft 365](https://www.microsoft365.com/) 에 들어가서 로그인 해줍니다.
 <br/><br/>
 ![스크린샷 2024-03-28 021345](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/0df5e344-63bb-4ebc-a4a8-0776d328742d)
-
+<br/><br/>
 왼쪽 배너의 Teams로 들어갑니다.
-
-
+<br/><br/>
+<br/><br/>
 ![스크린샷 2024-03-18 062912](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/c20de3c3-e1c3-4c9a-8fbb-6fc79634bd8e)
 ![스크린샷 2024-03-18 063007](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/ebb7df18-a633-4dd2-a303-753b8c49965a)
-
+<br/><br/>
 Teams 내에서 새로운 팀을 만듭니다. `팀 만들기`를 눌러서 만들어주시면 됩니다.
-
-
+<br/><br/>
+<br/><br/>
 ![스크린샷 2024-03-18 063042](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/36c32fd8-894a-4a0c-bb61-174897357b4f)
-
+<br/><br/>
 `+`버튼을 누릅니다.
-
-
+<br/><br/>
+<br/><br/>
 ![스크린샷 2024-03-18 063130](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/9398a80b-8fbf-4f23-80e6-97a0181fea08)
 
 `LIST`를 찾아 선택 후, 저장합니다.
