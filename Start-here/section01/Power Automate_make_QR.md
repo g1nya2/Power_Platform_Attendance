@@ -60,7 +60,7 @@ Teams 내에서 새로운 팀을 만듭니다. `팀 만들기`를 눌러서 만�
 > 보통 동아리원 명단 엑셀 파일 내에 동아리원 이메일, 이름, 학번, 학부정도만 기록되어 있어, 여기서 추가해주었습니다. <br/>엑셀에서 먼저 추가한 후 바로 리스트를 만들어도 됩니다.
 
 <br/><br/>
-## 3. Power Automate로 자동화흐름 만들기기<br/><br/>
+## 3. Power Automate로 자동화흐름 만들기<br/><br/>
 ![스크린샷 2024-03-18 064918](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/f65f3d28-c189-4ed6-aedd-c0d7ec39ad2d)
 <br/><br/>
 `통합`->`Power Automate`->`흐름만들기`
@@ -139,12 +139,33 @@ Teams 내에서 새로운 팀을 만듭니다. `팀 만들기`를 눌러서 만�
 <br/><br/>
 <br/><br/>
 ![스크린샷 2024-03-19 085851](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/4a4929bd-c9a0-4cc2-8a38-6518482e8a65)
-> 참가자에게 이메일을 보내기 전에, 잘 실행되는지 테스트를 하겠습니다.<br/><br/>
-‘저장’ 후 ‘테스트’를 누릅니다.
+> 참가자에게 이메일을 보내기 전에, 잘 실행되는지 테스트를 하겠습니다.
+>‘저장’ 후 ‘테스트’를 누릅니다.
+
 <br/><br/>
 <br/><br/>
+![스크린샷 2024-03-19 085940](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/9fddae34-15f4-4f5d-a6fe-a98e4edc74dc)
+<br/><br/>
+`수동`으로 `테스트`를 누릅니다.
+이후 `흐름실행`을 누르고,
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-19 090038](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/0aaa0b3f-e5ee-4119-b004-b82327a39eea)
+<br/><br/>
+‘흐름실행페이지’에 들어가 ‘테스트 성공’이라고 뜨는지 확인해주면 됩니다.
+<br/><br/>
+<br/><br/>
+다시 SharePoint에 들어가보면<br/><br/>
+![스크린샷 2024-03-19 090505](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/967bde3a-7d3c-4e41-b910-35b3e7f85055)
+<br/><br/>
+‘QR’이 성공적으로 생긴걸 확인할 수 있습니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-19 090753](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/9a0b31e0-dec2-4432-bd31-ca134b57a75a)
+<br/><br/>
+> 이제 QR을 생성했으니, 이메일을 보내는 작업을 만들겁니다.
 
-
+`작업추가`를 눌러줍니다.
 
 
 
