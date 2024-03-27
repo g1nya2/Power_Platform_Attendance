@@ -16,7 +16,8 @@
 ### 1. 엑셀 파일 , SharePoint List
 이번 핸즈온에서 사용할 파일은 '엑셀' 파일입니다. 보통 동아리원 명단을 엑셀로 가지고 있는 경우가 많아, 엑셀 파일을 바탕으로 하였습니다.
 
-실습에 사용할 파일: []()<- 다운받으세요.
+실습에 사용할 파일: [동아리원 명단](https://github.com/g1nya2/Power_Platform_Attendance/blob/main/%EB%8F%99%EC%95%84%EB%A6%AC%EC%9B%90%EB%AA%85%EB%8B%A8.xlsx) <- 다운받으세요.
+#### 다운받은 엑셀파일에는 이메일이 임의의 값으로 지정되어있으니 실습전에 본인 이메일로 바꿔서 작성해주시면 됩니다. 사전에 이 작업부터 해주세요.
 
 ### 2. QR 코드 생성
 오픈 소스로 QR를 생성하는 곳이 있습니다. `https://quickchart.io/`는 오픈소스로 차트 이미지를 만들어 주는 곳인데, 이 중 [QR코드 생성 API](https://quickchart.io/documentation/qr-codes/)가 있어, 이를 활용하여 QR 생성합니다.
