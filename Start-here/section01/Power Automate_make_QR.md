@@ -212,5 +212,5 @@ Teams 내에서 새로운 팀을 만듭니다. `팀 만들기`를 눌러서 만�
 <br/><br/>
 이렇게 동아리원 엑셀 파일과 Power Automate만 있다면 QR를 값에 따라 자동생성해서 이메일로 발송해주는 시스템을 코드없이 만들어내실 수 있습니다!
 <br/><br/>
-그럼 이번엔 이메일로 발송된 QR코드를 현장에서 인식하여, 출석체크를 할 수 있도록 출석체크 앱을 한번 만들어 볼까요?
-=> [section02 로 넘어가기](https://github.com/g1nya2/Power_Platform_Attendance/blob/main/Start-here/section02%20/Power%20Apps_make_QR_check-in_app.md)
+그럼 이번엔 이메일로 발송된 이 QR코드를 본격적으로 행사장에서 인식하여, 출석체크를 할 수 있도록하는 출석체크 앱을 한번 만들어 볼까요?
+=> [section02 로 가기](https://github.com/g1nya2/Power_Platform_Attendance/blob/main/Start-here/section02%20/Power%20Apps_make_QR_check-in_app.md)
