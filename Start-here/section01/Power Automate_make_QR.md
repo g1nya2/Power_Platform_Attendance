@@ -180,13 +180,13 @@ Teams 내에서 새로운 팀을 만듭니다. `팀 만들기`를 눌러서 만�
 <br/><br/>
 ![스크린샷 2024-03-19 091537](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/a4e5f0e5-52a8-4ee5-bc49-649ae538bec9)
 <br/><br/>
-각각 다음과 같이 작성한후, QR코드 이미지가 외부에서 생성되어 해당 주소를 입력해야하므로 QR 코드 이미지 주소를 HTML 태그를 통해서 입력하게 되어 '<img src=“해당주소”>'와 같이 직접 HTML 태그로 작성합니다.
+각각 다음과 같이 작성한후, QR코드 이미지가 외부에서 생성되어 해당 주소를 입력해야하므로 QR 코드 이미지 주소를 HTML 태그를 통해서 입력하게 되어 `<img src=“해당주소”>`와 같이 직접 HTML 태그로 작성합니다.
 따라서, `</>`표시를 누릅니다.
 <br/><br/>
 <br/><br/>
 ![스크린샷 2024-03-19 091815](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/6b00e3f0-bd50-48c7-97ed-0dc9853f5aec)
 <br/><br/>
-'</p>'위에 `<img src=“QR”>`을 작성해줍니다.
+`</p>`위에 `<img src=“QR”>`을 작성해줍니다.
 <br/><br/>
 <br/><br/>
 ## 3. Power Automate 흐름 실행 후, 결과 확인하기 <br/><br/>
