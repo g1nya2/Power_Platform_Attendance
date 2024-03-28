@@ -1,5 +1,5 @@
 # Power Automate에서 QR 생성 후, 배포하기
-## 1. Microsoft 365 에서 Teams로 이동하기<br/><br/>
+## 1. Microsoft 365 에서 Teams로 이동하기<br/>
 먼저, [Microsoft 365](https://www.microsoft365.com/) 에 들어가서 로그인 해줍니다.
 <br/><br/>
 ![스크린샷 2024-03-28 021345](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/0df5e344-63bb-4ebc-a4a8-0776d328742d)
