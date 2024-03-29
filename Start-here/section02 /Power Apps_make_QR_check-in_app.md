@@ -211,7 +211,7 @@ Text Label을 5개 추가한 후 '이름'과 '소속'을 각각 키(key)와 값(
 <br/><br/>
 ![스크린샷 2024-03-29 042153](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/d6af980f-c2a5-4df3-93c8-2d95527fec23)
 <br/><br/>
-QRScan 스크린에서 `+`를 누르고, '텍스트'를 검색 후 `텍스트 레이블`을 선택하여 추가해줍니다. 총 5번을 해서 각각 위 사진처럼 배치해줍니다.
+QRScan 스크린에서 `+`를 누르고, '텍스트'를 검색 후 `텍스트 레이블`을 선택하여 추가해줍니다. 총 6번을 해서 각각 위 사진처럼 배치해줍니다.
 <br/><br/>
 <br/><br/>
 ![스크린샷 2024-03-29 042453](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/e6bcc021-8474-4577-8362-e9732c5cb4de)
