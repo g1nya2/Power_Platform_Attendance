@@ -33,5 +33,34 @@ SharePoint에 접속하시면 왼편에 메뉴들이 나와 있습니다.
 
 출석여부를 다루는 Attendance 컬럼은 **선택항목**로 해둔 점을 눈여겨 봐주세요.
 '다음(Next)'를 눌러 SharePoint List를 만듭니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 035658](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/86aaf178-af4f-4bc4-8cb9-5d09fa770bab)
+<br/><br/>
+이름은 `WebinarBookingList_01`로 해주고, `내목록`에 저장하고 만들어줍니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 035751](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/8e8138e4-f8c6-4b40-8f09-f091218dac3a)
+![스크린샷 2024-03-29 035822](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/fbd703ab-8771-4fd4-95d5-ce45953846cc)
+<br/><br/>
+Attendance 라는 컬럼이 Choice 이기 때문에 나중에 출석체크를 확인할 때 Boolean으로 처리가 어렵습니다. 그래서 `Attendance_Status`라는 '예/아니요' 타입의 컬럼을 추가로 만듭니다.
+
+나중에 출석체크할 때 토글로 사용할 계획입니다.
+<br/><br/>
+<br/><br/>
+## 3. SharePoint List에서 앱 만들기
+이제 앱을 만들어 봅시다.
+![스크린샷 2024-03-29 035901](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/6bbacab8-fe67-42af-97bd-5716ea5f3830)
+<br/><br/>
+목록(list) 위에 있는 메뉴에서 **"Integrate > Power Apps > Create an app"** 순서로 앱을 만듭니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 040005](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/ad26d6d9-44ac-44ea-bf1d-004e8234b67a)
+<br/><br/>
+조금 기다리면 만들어집니다.
+이렇게 만들어진 곳을 '캔버스(Canvas)'라고 합니다. 그림을 그리는 것처럼 앱을 만들 수 있다는 뜻이겠죠? 
+<br/><br/>
+<br/><br/>
+## 4. 앱에 새로운 스크린 만들기
 
 
