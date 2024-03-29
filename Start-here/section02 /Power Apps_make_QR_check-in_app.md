@@ -214,9 +214,95 @@ Text Label을 5개 추가한 후 '이름'과 '소속'을 각각 키(key)와 값(
 QRScan 스크린에서 `+`를 누르고, '텍스트'를 검색 후 `텍스트 레이블`을 선택하여 추가해줍니다. 총 5번을 해서 각각 위 사진처럼 배치해줍니다.
 <br/><br/>
 <br/><br/>
+![스크린샷 2024-03-29 042453](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/e6bcc021-8474-4577-8362-e9732c5cb4de)
+<br/><br/>
+각각 레이블의 이름을 인식하기 쉽게 잘 바꾸어줍니다.
+1. 이름을 표시하기 위해 'lblName'이라고 이름짓고,
+2. QR Scan을 통해 가져온 값 가운데 이름을 담기위해 'vName'이라고 이름짓습니다.
+3. 'vName'에는 Text Label의 "Text"에 스캔해서 취득한 "이름"을 나타내게 할 생각입니다.
+4. 동명이인이 아닌 걸 확인하기 위해 소속을 표시하려고 'lblOrg'와 'vOrg'로 이름 짓습니다. 
+5. 마지막 출석상태 라벨은 그냥 자유롭게 지어주시면 됩니다. 저는 'check'라고 적었네요
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 042543](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/00d6b191-bd20-4377-89b3-b0a3e0309c33)
+<br/><br/>
+이렇게 될 수 있겠네요..!
+이제 뭐가 뭔지 인식하기 쉽겠죠?
 
+> 주의: 실습은 이름을 ID처럼 사용하고 있는데, 동명이인인 경우에는 실제 문제가 될 수 있습니다. 같은 이름인 사람도 따로 구분할 수 있는 ID를 부여해서(가령 행사 신청시 'webinar01'과 같이 고유한 번호를 부여해서) 다른 사람과 구분하는 것이 매우 중요합니다.
 
-
-
-
-
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 042720](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/40ce6305-280f-453c-b41f-c637959427b8)
+<br/><br/>
+`vName`에 Text Label의 "Text"에 스캔해서 취득한 "이름"을 나타내게 할 생각입니다.
+따라서, 스캔할 때 저장해둔 변수 "vNameValue"만 입력하면 끝납니다. 함수에
+```
+vNameValue
+```
+라고 입력해주시면 됩니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 043141](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/5a747a68-f0bf-499a-9da6-f9133f9eae4e)
+<br/><br/>
+'vOrg'는 Lookup 함수를 사용해서 QR코드를 스캔해서 가져온 이름에 해당하는 사람의 소속을 가져옵니다.
+vOrg는 "Text"의 값을 스캔한 사람의 이름을 기준으로 소속을 가져와야 하므로 "Text" 상태의 함수를 LookUp을 사용해서 가져옵니다. 함수에 아래와 같이 적어주면 됩니다.
+```
+LookUp(WebinarBookingList_01, Title = vNameValue, organization)
+```
+<br/><br/>
+<br/><br/>
+## 9. QR 코드 스캔한 사람의 출석상태 체크
+Toggle 버튼으로 손쉽게 출석여부를 확인하고 상태값을 업데이트 합니다. 
+![스크린샷 2024-03-29 043231](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/e9a2cc06-7dae-4e8b-9239-8ddcac8a331c)
+<br/><br/>
+`+`를 선택하고 토글을 검색한 후 `토글`을 눌러줍니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 043330](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/02ed38e9-2485-45c9-a53c-afabceb60736)
+Toggle 버튼에는 "예/아니요" 타입의 "Attendance_Status"라는 컬럼을 활용합니다.
+Toggle 버튼은 "Attendance_Status"라는 컬럼의 값과 동기화를 해줍니다. 즉, 해당 참가자의 "Attendance_Status"가 "Yes"인 경우에는 "On"이 되게 하고, "No"인 경우에는 "Off"가 되게 합니다.
+왼쪽 위에 `Default`로 해주셔야하고, 함수에는
+```
+LookUp(WebinarBookingList_01, Title = vNameValue, Attendance_Status)
+```
+적어주면 됩니다.
+<br/><br/>
+<br/><br/>
+## 10. QR 코드 이미지 표시하기
+"Image"라는 메뉴를 활용해서 QR코드를 스캔한 후에 스캔한 사람의 QR 코드 이미지를 앱에서 보여주며 확인할 수 있게 해보겠습니다.
+꼭 필요하지는 않으나 이미지를 불러와서 앱에 표시하는 기능을 익히는 정도로 실습해보려고 합니다.
+<br/><br/>
+![스크린샷 2024-03-29 043433](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/7f7e5d41-2306-452d-bd3c-66b575c8af4d)
+"이미지"는 상단 메뉴에서 추가하실 수 있습니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 043454](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/780a9c83-5a66-448c-a02b-94d563619e02)
+위와 같이 원하는 위치에 배치하면 됩니다.
+그리고 함수를 다음과같이 적어줍니다.
+```
+"LookUp(WebinarBookingList_01, Title = vNameValue, QR)"
+```
+참고로 "Image"를 테이블 또는 외부에서 불러올 때 이미지 주소는 문자여야 하므로 따옴표로 감싸줘야 합니다.
+<br/><br/>
+<br/><br/>
+## 11. 출석상태 변경후 SharePoint List에 변경한 값 업데이트 하기(Patch)
+![스크린샷 2024-03-29 043605](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/2d682db7-57bd-41b3-a996-2e3f5622b011)
+<br/><br/>
+`+`누른 후 버튼을 검색하구 `버튼`을 선택하여 추가해줍니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 043651](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/ed35b4c9-e777-4fac-a135-42f1e6ce86f7)
+<br/><br/>
+이 때 Patch가 성공하면 If 함수를 사용해서 성공과 실패의 경우 메세지를 달리 보여주게 처리합니다.
+```
+Set(varPatchResult, Patch(WebinarBookingList_01, LookUp(WebinarBookingList_01, Title=vNameValue), {Attendance_Status: Toggle1.Value}));
+If(!IsError(varPatchResult), Notify("출석 상태 변경 성공", NotificationType.Success), Notify("출석 상태 변경 오류", NotificationType.Error));
+```
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 043753](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/e6abcbe5-017c-4d90-a16b-a6f79679c2a9)
+<br/><br/>
+오른쪽 위를 아이콘을 선택해 게시해주면 됩니다.
+<br/><br/>
+<br/><br/>
