@@ -301,6 +301,7 @@ If(!IsError(varPatchResult), Notify("출석 상태 변경 성공", NotificationT
 ```
 <br/><br/>
 <br/><br/>
+## 12. 앱 게시하기.
 ![스크린샷 2024-03-29 043753](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/e6abcbe5-017c-4d90-a16b-a6f79679c2a9)
 <br/><br/>
 오른쪽 위를 아이콘을 선택해 게시해주면 됩니다.
