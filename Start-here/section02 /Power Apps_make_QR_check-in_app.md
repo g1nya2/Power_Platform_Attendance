@@ -124,12 +124,42 @@ Power Apps Canvas의 왼편 메뉴 가운데 Media(이미지)를 선택한 후�
 Navigate(BrowseScreen1)
 ```
 이라고 작성해줍니다.
+<br/><br/>
+> Navigate 함수를 쓰면 버튼을 눌렀을때 해당 스크린으로 이동할 수 있습니다.
 
-
-
-
-
-
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 040725](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/c3c18e5b-717b-492e-b4d9-709e565fa1c6)
+<br/><br/>
+마찬가지로 두번째 버튼을 `QR스캔`으로 텍스트를 바꿔주고, 함수값에 
+```
+Navigate(QRScan)
+```
+이라고 작성해줍니다.
+<br/><br/>
+> Navigate 함수를 쓰면 버튼을 눌렀을때 해당 스크린으로 이동할 수 있습니다.
+<br/><br/>
+<br/><br/>
+## 6. Home 스크린에 미디어 추가 및 버튼 추가
+BrowseScreen1과 QRScan으로 이동하는 버튼을 Home에서 만들었으니 각 스크린에서 Home으로 가는 기능도 추가해야겠죠?
+<br/><br/>
+![스크린샷 2024-03-29 040842](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/f8e4f7c3-d0c4-43a7-b800-9f97a95e5be7)
+<br/><br/>
+`+`를 선택후, 홈을 검색한다음 `홈`을 선택하면 홈으로 가는 아이콘을 추가할 수 있습니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 041054](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/64e216ea-a912-440a-8bb0-6e450c721c0b)
+<br/><br/>
+위처럼 아이콘 색을 바꿀 수 있고, 홈으로 이동해야하기 때문에 함수에
+```
+Navigate(Home)
+```
+을 작성해줍니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 041131](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/b6d5b945-cf9b-4126-8712-0882c2436fd4)
+<br/><br/>
+마찬가지로 QRScan스크린에도 위 과정을 통해 홈으로 가는 아이콘을 추가해줍니다.
 
 
 
