@@ -160,16 +160,31 @@ Navigate(Home)
 ![스크린샷 2024-03-29 041131](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/b6d5b945-cf9b-4126-8712-0882c2436fd4)
 <br/><br/>
 마찬가지로 QRScan스크린에도 위 과정을 통해 홈으로 가는 아이콘을 추가해줍니다.
-
-
-
+<br/><br/>
+<br/><br/>
+## 7. 바코드 판독기 추가하기
+![스크린샷 2024-03-29 041441](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/237452b5-8f20-41f8-8696-1a0719b8330b)
+<br/><br/>
+QRScan 스크린에서 `+삽입` 선택 후, 바코드를 검색하면 나오는 `바코드 판독기`를 선택해줍니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 041538](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/f3360ff4-472f-4645-b63b-08da268b10fe)
+<br/><br/>
+텍스트를 `QR코드 스캔`으로 바꿔줍니다.
+<br/><br/>
+<br/><br/>
+![스크린샷 2024-03-29 041809](https://github.com/g1nya2/Power_Platform_Attendance/assets/105257807/b10fbcfe-5964-43ba-a61d-ca6cb43f6bb7)
+Power Apps에서 Barcode Reader 기능을 활용하여 QR 코드에서 일부 값을 추출하고 해당 값을 Text Label에 표시하는 함수를 만들어줍니다.
+> 1. QR 코드 값 추출:
 > - QR 코드를 스캔한 후, 해당 URL에서 name 값을 추출하는 방법은 다음과 같습니다:
 > - QR 코드 스캔 결과를 BarcodeReader1.Barcodes로 가져옵니다.
 > - 이후 First(BarcodeReader1.Barcodes).Value를 사용하여 name 값을 추출합니다.
 > 2. Text Label에 값 표시:
 > - 추출한 name 값을 vNameValue라는 변수에 저장합니다.
 > -Text Label인 vName에서 vNameValue 값을 읽어 표시합니다.
+
 <br/><br/>
+
 결론적으로 **OnScan**모드에 작성할 함수는 아래와 같습니다.
 ```
 // OnScan 이벤트에서 호출되는 함수
